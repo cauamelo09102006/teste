@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Lista de Casas</title>
+    <style>
+       
+       .property-container {
+            display: flex;
+            justify-content: space-between; /* Alinha a imagem à direita */
+            background-color: rgb(172, 172, 172); 
+            border: 1px solid rgba(183, 183, 183, 0.5); 
+            border-radius: 4px; 
+            padding: 20px; 
+            margin: 10px 0; 
+            color: white;
+            align-items: center; /* Centraliza verticalmente */
+            width: 1560px;
+        }
+
+        .property-details {
+            flex: 1; /* O conteúdo textual ocupa mais espaço */
+        }
+
+        .property-image img {
+            width: 230px; /* Defina o tamanho da imagem */
+            height: 140px;
+            margin-left: 10px; /* Espaço entre imagem e conteúdo */
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="img/emblema.png" alt="Logo" width="90px" height="100px"> 
+        <div style="font-size: 80px; color: rgb(255, 255, 255); margin-right: 150px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 60px; font-style: oblique;">
+            YourPlace
+        </div>
+        <div class="button-container">
+        </div>
+    </div>
+    
+    <div class="second-top-bar">
+        <div class="button-container" style="margin-left: 640px;">
+            <a href="usuario.html"><button>Cadastrar</button></a>
+            <button style="height: 40px;" onclick="location.href='cadastroImovel.html'">Inserir Imóvel</button>
+        </div>
+    </div>
+    
+    <div class="divider"></div> <!-- Divisa -->
+ 
+    <h1 style="color: white;">Casas</h1>
+
+    <div>
+        <strong style="color: white;">ID do Usuário:</strong> <span id="usuarioId"></span>
+    </div>
+
+    
+    
+    <ul id="listaCasas">
+        <!-- Casas serão inseridas aqui via JavaScript -->
+    </ul>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

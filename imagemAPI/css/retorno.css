@@ -1,0 +1,79 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estiliza o corpo da página */
+  body {
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #475d70; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 0; /* Remove o padding superior */
+  }
+  
+  /* Estiliza a barra superior */
+  .top-bar {
+    background-color: #373d42; 
+    color: rgb(255, 208, 0);
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 50px;
+    position: fixed; /* Faz com que a barra fique fixa no topo */
+    top: 0; /* Posiciona a barra no topo da tela */
+    left: 0; /* Garante que a barra se estenda até a borda esquerda da tela */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+  }
+  
+  /* Estiliza o container de login */
+  .login-container {
+    background-color: #bbbbbb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 100px; /* Adiciona um espaço no topo para não sobrepor a barra */
+  }
+  
+  /* Estiliza o título */
+  .login-container h2 {
+    color: rgb(255, 208, 0);
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estiliza o botão */
+  /* Estiliza o link como um botão */
+.button-link {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 250px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    height: 40px;
+  }
+  
+  .button-link:hover {
+    background-color: #353535;
+  }
+  
+  

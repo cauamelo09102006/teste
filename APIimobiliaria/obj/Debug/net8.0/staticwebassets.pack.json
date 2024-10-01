@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\Captura de tela 2024-06-11 153121.png",
+      "PackagePath": "staticwebassets\\images\\Captura de tela 2024-06-11 153121.png"
+    },
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\FIRE WATER.png",
+      "PackagePath": "staticwebassets\\images\\FIRE WATER.png"
+    },
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\WIN_20240222_16_07_27_Pro.jpg",
+      "PackagePath": "staticwebassets\\images\\WIN_20240222_16_07_27_Pro.jpg"
+    },
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\WIN_20240222_16_09_30_Pro.jpg",
+      "PackagePath": "staticwebassets\\images\\WIN_20240222_16_09_30_Pro.jpg"
+    },
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\anuncio1.png",
+      "PackagePath": "staticwebassets\\images\\anuncio1.png"
+    },
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\anuncio2.png",
+      "PackagePath": "staticwebassets\\images\\anuncio2.png"
+    },
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\anuncio3.png",
+      "PackagePath": "staticwebassets\\images\\anuncio3.png"
+    },
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\anuncio4.png",
+      "PackagePath": "staticwebassets\\images\\anuncio4.png"
+    },
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\humildade.png",
+      "PackagePath": "staticwebassets\\images\\humildade.png"
+    },
+    {
+      "Id": "C:\\projetos\\APIimobiliaria\\wwwroot\\images\\thumb-1920-909641.png",
+      "PackagePath": "staticwebassets\\images\\thumb-1920-909641.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.APIimobiliaria.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.APIimobiliaria.props",
+      "PackagePath": "build\\APIimobiliaria.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.APIimobiliaria.props",
+      "PackagePath": "buildMultiTargeting\\APIimobiliaria.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.APIimobiliaria.props",
+      "PackagePath": "buildTransitive\\APIimobiliaria.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

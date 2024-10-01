@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <title>Detalhes do Imóvel</title>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="img/emblema.png" alt="Logo" width="70px" height="80px">
+        <div style="font-size: 80px; color: rgb(255, 255, 255); margin-right: 200px; font-family:serif; font-size: 60px; font-style: oblique;">YourPlace</div> 
+    </div>
+
+    <h1 style="text-align: center; margin-bottom: 15px; color: white;">Detalhes do Imóvel</h1>
+    
+    <div class="container">
+        <div class="imovel-image">
+            <img id="imovelImage" src="" alt="Imagem do Imóvel">
+        </div>
+        
+        <div class="imovel-info">
+            <div id="imovelDetalhes">
+                <p style="font-size: 20px; font-style:oblique;"><strong>Endereço:</strong> <span id="endereco"></span></p>
+                <p style="font-size: 20px; font-style: oblique;"><strong>Descrição:</strong> <span id="descricao"></span></p>
+                <p style="font-size: 20px; font-style: oblique;"><strong>IPTU:</strong> <span id="iptu"></span></p>
+                <p style="font-size: 20px; font-style: oblique;"> <strong>Condições:</strong> <span id="condicoes"></span></p>
+                
+            </div>
+
+            <div id="aluguelDetalhes" style="display: none;">
+                <h2>Detalhes de Aluguel</h2>
+                <p><strong>Tipo:</strong> <span id="tipoAluguel"></span></p>
+                <p><strong>Área:</strong> <span id="areaAluguel"></span></p>
+                <p><strong>Cômodos:</strong> <span id="comodosAluguel"></span></p>
+                <p><strong>Disponível:</strong> <span id="disponivelAluguel"></span></p>
+                <p><strong>Mobiliado:</strong> <span id="mobiliadoAluguel"></span></p>
+                <p><strong>Valor:</strong> <span id="valorAluguel"></span></p>
+                <div id="usuarioAluguelDetalhes">
+                    <h3>Informações do Usuário</h3>
+                    <p><strong>Nome:</strong> <span id="nomeUsuarioAluguel"></span></p>
+                    <p><strong>Email:</strong> <span id="emailUsuarioAluguel"></span></p>
+                    <p><strong>Telefone:</strong> <span id="telefoneUsuarioAluguel"></span></p>
+                    <a href="https://api.whatsapp.com/send?phone=5514991815028&text=ol%C3%A1%20gostaria%20de%20saber%20sobre%20as%20casas">
+                        <button style="width: 195px; height: 30px; background-color: rgb(52, 95, 128); color: rgb(255, 255, 255); border-radius: 4px;" class="contact">Contato</button>
+                    </a> 
+                    <button style="width: 195px; height: 30px; color: white; background-color: rgb(52, 95, 128); border-radius: 4px;" class="buy" onclick="window.location.href = 'compra.html';">Comprar</button>
+
+            
+                </div>
+            </div>
+
+            <div id="vendaDetalhes" style="display: none;">
+                <h2>Detalhes de Venda</h2>
+                <p><strong>Tipo:</strong> <span id="tipoVenda"></span></p>
+                <p><strong>Área:</strong> <span id="areaVenda"></span></p>
+                <p><strong>Cômodos:</strong> <span id="comodosVenda"></span></p>
+                <p><strong>Disponível:</strong> <span id="disponivelVenda"></span></p>
+                <p><strong>Mobiliado:</strong> <span id="mobiliadoVenda"></span></p>
+                <p><strong>Valor:</strong> <span id="valorVenda"></span></p>
+                <div id="usuarioVendaDetalhes">
+                    <h3>Informações do Usuário</h3>
+                    <p><strong>Nome:</strong> <span id="nomeUsuarioVenda"></span></p>
+                    <p><strong>Email:</strong> <span id="emailUsuarioVenda"></span></p>
+                    <p><strong>Telefone:</strong> <span id="telefoneUsuarioVenda"></span></p>
+                    <a href="https://api.whatsapp.com/send?phone=5514991815028&text=ol%C3%A1%20gostaria%20de%20saber%20sobre%20as%20casas">
+                        <button style="width: 195px; height: 30px; background-color: rgb(156, 20, 20); color: rgb(255, 255, 255); border-radius: 10px;" class="contact">Contato</button>
+                    </a> 
+                    <button style="width: 195px; height: 30px; color: white; background-color: rgb(116, 39, 39); border-radius: 10px;" class="buy" onclick="window.location.href = 'compra.html';">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/detalhes.js"></script>
+</body>
+</html>

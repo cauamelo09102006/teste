@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Novo Imóvel</title>
+    <link rel="stylesheet" href="css/cadastroImovel.css">
+
+</head>
+<body>
+
+    <div class="top-bar">
+        <img src="img/emblema.png" alt="Logo" width="90px" height="100px"> 
+        <div style="font-size: 80px; color: rgb(255, 255, 255); margin-right: 720px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 60px; font-style: oblique;">YourPlace</div> 
+        </div>
+
+    <div class="container">
+        <h1>Cadastrar Novo Imóvel</h1>
+
+        <form id="formNovoImovel" class="form">
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="iptu">IPTU:</label>
+                <input type="text" id="iptu" name="iptu" required>
+            </div>
+
+            <div class="form-group">
+                <label for="condicoes">Condições:</label>
+                <input type="text" id="condicoes" name="condicoes" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tipoImovel">Tipo de Imóvel:</label>
+                <select id="tipoImovel" name="tipoImovel" required>
+                    <option value="">Selecione</option>
+                    <option value="aluguel">Aluguel</option>
+                    <option value="venda">Venda</option>
+                </select>
+            </div>
+
+            <div id="aluguelFields" class="hidden">
+                <div class="form-group">
+                    <label for="areaAluguel">Área (m²):</label>
+                    <input type="text" id="areaAluguel" name="areaAluguel">
+                </div>
+
+                <div class="form-group">
+                    <label for="comodosAluguel">Cômodos:</label>
+                    <input type="text" id="comodosAluguel" name="comodosAluguel">
+                </div>
+
+                <div class="form-group">
+                    <label for="disponivelAluguel">Disponível:</label>
+                    <input type="text" id="disponivelAluguel" name="disponivelAluguel">
+                </div>
+
+                <div class="form-group">
+                    <label for="mobiliadoAluguel">Mobiliado:</label>
+                    <select id="mobiliadoAluguel" name="mobiliadoAluguel">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="valorAluguel">Valor (R$):</label>
+                    <input type="text" id="valorAluguel" name="valorAluguel">
+                </div>
+            </div>
+
+            <div id="vendaFields" class="hidden">
+                <div class="form-group">
+                    <label for="areaVenda">Área (m²):</label>
+                    <input type="text" id="areaVenda" name="areaVenda">
+                </div>
+
+                <div class="form-group">
+                    <label for="comodosVenda">Cômodos:</label>
+                    <input type="text" id="comodosVenda" name="comodosVenda">
+                </div>
+
+                <div class="form-group">
+                    <label for="disponivelVenda">Disponível:</label>
+                    <input type="text" id="disponivelVenda" name="disponivelVenda">
+                </div>
+
+                <div class="form-group">
+                    <label for="mobiliadoVenda">Mobiliado:</label>
+                    <input type="text" id="mobiliadoVenda" name="mobiliadoVenda">
+                </div>
+
+                <div class="form-group">
+                    <label for="valorVenda">Valor (R$):</label>
+                    <input type="text" id="valorVenda" name="valorVenda">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="imagem">Imagem:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" required>
+            </div>
+
+            <button type="submit">Salvar Imóvel</button>
+        </form>
+    </div>
+
+    <script src="./js/cadastroImovel.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/usuario.css">
+    <title>Cadastro de Usuário</title>
+    <style>
+       
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #adadad;
+            height: 340px;
+        }
+        .footer {
+            background-color: #373d42;
+            color: #fff; 
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: serif; 
+            font-size: 18px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="img/emblema.png" alt="Logo" width="90px" height="100px"> 
+        <div style="font-size: 100px; color: rgb(255, 255, 255); text-align: center; font-family:serif; font-size: 60px; font-style: oblique; margin-left: 550px;">
+            YourPlace
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 style="color: rgb(255, 255, 255); text-align: center;">Entrar</h1>
+        <form id="cadastroForm">
+            <label for="email" style="color: white; text-align: left;">Email:</label><br>
+            <input type="email" id="email" style="width: 425px; border-radius: 15px; height: 22px;" name="email" required><br><br>
+            <label for="senha" style="color: white; text-align: left;">Senha:</label><br>
+            <input type="password" id="senha" style="width: 425px; border-radius: 15px; height: 22px;" name="senha" required><br><br>
+            <button type="submit">Login</button><br>
+            <nav>
+                <ul>
+                    <a link href="index.html" style="position:static; color: white; font-size: 15px; margin-left: 96px;">Continuar sem Conta</a>
+                </ul>
+            </nav>
+        </form>
+    </div>
+
+    <div class="footer">
+        YourPlace © 2024
+    </div>
+
+    <script src="./js/usuario.js"></script>
+</body>
+</html>

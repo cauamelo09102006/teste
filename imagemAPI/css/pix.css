@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #475d70;
+  }
+
+  .top-bar {
+    background-color: #373d42; 
+    height: 80px; /* Altura da barra */
+    width: 100%; /* Largura total */
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Posiciona a barra no topo */
+    left: 0; /* Posiciona a barra à esquerda */
+    z-index: 1000; /* Garante que a barra esteja acima de outros elementos */
+    border-radius: 0px;
+    display: flex; /* Permite o alinhamento vertical */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding-left: 20px; /* Espaçamento à esquerda */
+    justify-content: space-between; /* Adiciona espaço entre os elementos filhos */
+}
+
+.topnav input[type="text"] {
+  width: 200px; /* Ajuste o valor conforme necessário */
+  height: 15px;
+}
+  
+  .login-container {
+    background-color: #bebebe;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    width: 500px;
+    height: 380px;
+    border-radius: 10px;
+  }
+  
+  .login-container h2 {
+    margin-top: 0;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    width: 375px;
+    margin-top: 50px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+  
+  button:hover {
+    background-color: #242424;
+  }
+
+
+  .login-container {
+    text-align: center;
+  }
+  .login-button-container {
+    margin-top: 20px;
+  }
+  .password-links {
+    margin-top: 10px;
+  }
+  .password-links a {
+    margin-right: 10px;
+  }
