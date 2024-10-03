@@ -31,17 +31,19 @@ async function carregarListaCasas() {
 
             listItem.innerHTML = `
               <div class="property-container">
-                    <div class="property-details">
-                        <strong>Endereço:</strong> ${casa.endereço}<br>
-                        <strong>Descrição:</strong> ${casa.descrição}<br>
-                        <strong>IPTU:</strong> ${casa.iptu}<br>
-                        <strong>Condições:</strong> ${casa.condicoes}<br>
-                        <button onclick="verDetalhes(${casa.id})">Ver Detalhes</button>
-                    </div>
-                    <div class="property-image">
-                        <img src="${imageUrl}" alt="Imagem do Imóvel">
-                    </div>
-                </div>
+    <div class="property-image">
+        <img src="${imageUrl}" alt="Imagem do Imóvel">
+    </div>
+    <div class="property-details">
+        <strong>Endereço:</strong> ${casa.endereço}<br>
+        <strong>Descrição:</strong> ${casa.descrição}<br>
+        <strong>IPTU:</strong> ${casa.iptu}<br>
+        <strong>Condições:</strong> ${casa.condicoes}<br>
+        <button class="btn-detalhes" onclick="verDetalhes(${casa.id})">Ver Detalhes</button>
+    </div>
+</div>
+
+
             `;
             listaCasasElement.appendChild(listItem);
         }

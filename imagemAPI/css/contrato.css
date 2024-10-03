@@ -1,0 +1,43 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  .pdf-container {
+    margin-top: 20px;
+  }
+  iframe {
+    width: 80%;
+    height: 600px;
+    border: none;
+  }
+  select {
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  h2 {
+    color: #333;
+  }
+  .download-message {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+  }
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  button:hover {
+    background-color: #45a049;
+  }

@@ -40,6 +40,6 @@ document.getElementById('cadastroForm').addEventListener('submit', async functio
         window.location.href = 'index.html'; // Redirecionar para a página inicial após o cadastro
     } catch (error) {
         console.error('Erro ao cadastrar usuário:', error);
-        alert('Erro ao cadastrar usuário. Verifique o console para mais detalhes.');
+        alert('O Email cadastrado ja existe. Coloque outro ou faça o Login');
     }
 });

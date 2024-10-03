@@ -38,7 +38,6 @@
         align-items: center; /* Alinha os itens verticalmente */
         padding-left: 20px; /* Espaçamento à esquerda */
         justify-content: space-between; /* Adiciona espaço entre os elementos filhos */
-        margin-top: 5px;
         margin-bottom: 400px;
       
     }
@@ -51,7 +50,7 @@
     }
    
     .second-top-bar button {
-        margin-right: 110px;
+        margin-right: 180px;
         background-color: transparent;
         border: none;
         color: rgb(255, 255, 255);

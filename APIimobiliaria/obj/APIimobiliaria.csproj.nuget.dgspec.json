@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos\\APIimobiliaria\\APIimobiliaria.csproj": {}
+    "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\APIimobiliaria.csproj": {}
   },
   "projects": {
-    "C:\\projetos\\APIimobiliaria\\APIimobiliaria.csproj": {
+    "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\APIimobiliaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\APIimobiliaria\\APIimobiliaria.csproj",
+        "projectUniqueName": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\APIimobiliaria.csproj",
         "projectName": "APIimobiliaria",
-        "projectPath": "C:\\projetos\\APIimobiliaria\\APIimobiliaria.csproj",
+        "projectPath": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\APIimobiliaria.csproj",
         "packagesPath": "C:\\Users\\CauaMelo\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\APIimobiliaria\\obj\\",
+        "outputPath": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CauaMelo\\AppData\\Roaming\\NuGet\\NuGet.Config"

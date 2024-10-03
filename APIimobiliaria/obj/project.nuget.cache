@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "idKe9iEmIBL+hRUn4viHbY3gqmt0zgf22hmJXyiU4pJflw1wmVq1cKEUq5jy3JcODxhL9bwXqHm3V6GBh/90dQ==",
+  "dgSpecHash": "YTz6xX4+4cnG0+RoXu9Yy39YDcreQYx0eXO6dpgL/LseDk3Afn8lgisonVxpjceTdSIEC2nQQC3MAGfK7MZ9og==",
   "success": true,
-  "projectFilePath": "C:\\projetos\\APIimobiliaria\\APIimobiliaria.csproj",
+  "projectFilePath": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\APIimobiliaria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CauaMelo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\CauaMelo\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.4\\microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",

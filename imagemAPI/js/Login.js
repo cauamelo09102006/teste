@@ -36,4 +36,3 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
         loginError.textContent = 'Erro ao fazer login: ' + error.message;
     }
 });
-tem menu de contexto

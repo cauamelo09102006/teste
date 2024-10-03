@@ -91,3 +91,27 @@ body {
   .password-links a {
     margin-right: 10px;
   }
+
+  #payment-message {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #payment-message button {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  #payment-message button:hover {
+    background-color: #dddddd;
+  }

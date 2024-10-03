@@ -8,9 +8,11 @@ async function carregarDetalhes() {
         if (!responseImovel.ok) {
             throw new Error('Imóvel não encontrado.');
         }
-        const imovelDetalhes = await responseImovel.json();
-
+        const imovelDetalhes = await responseImovel.json()
         const imovel = imovelDetalhes.imovel;
+
+
+        
         document.getElementById('endereco').textContent = imovel.endereço;
         document.getElementById('descricao').textContent = imovel.descrição;
         document.getElementById('iptu').textContent = imovel.iptu;
@@ -25,6 +27,7 @@ async function carregarDetalhes() {
         document.getElementById('imovelImage').src = imageUrl;
 
         if (imovelDetalhes.alugueis.length > 0) {
+            localStorage.setItem('tipoImovel', 'aluguel');
             const aluguel = imovelDetalhes.alugueis[0];
             document.getElementById('tipoAluguel').textContent = aluguel.tipo;
             document.getElementById('areaAluguel').textContent = aluguel.area;
@@ -46,6 +49,7 @@ async function carregarDetalhes() {
         }
 
         if (imovelDetalhes.vendas.length > 0) {
+            localStorage.setItem('tipoImovel', 'venda');
             const venda = imovelDetalhes.vendas[0];
             document.getElementById('tipoVenda').textContent = venda.tipo;
             document.getElementById('areaVenda').textContent = venda.area;

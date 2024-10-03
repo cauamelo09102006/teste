@@ -38,7 +38,7 @@
 
     <div class="container">
         <h1 style="color: rgb(255, 255, 255); text-align: center;">Entrar</h1>
-        <form id="cadastroForm">
+        <form id="loginForm">
             <label for="email" style="color: white; text-align: left;">Email:</label><br>
             <input type="email" id="email" style="width: 425px; border-radius: 15px; height: 22px;" name="email" required><br><br>
             <label for="senha" style="color: white; text-align: left;">Senha:</label><br>
@@ -49,6 +49,7 @@
                     <a link href="index.html" style="position:static; color: white; font-size: 15px; margin-left: 96px;">Continuar sem Conta</a>
                 </ul>
             </nav>
+            <p id="loginError" style="color: red; display: none;"></p>
         </form>
     </div>
 
@@ -56,6 +57,6 @@
         YourPlace © 2024
     </div>
 
-    <script src="./js/usuario.js"></script>
+    <script src="./js/Login.js"></script>
 </body>
 </html>

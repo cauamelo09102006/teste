@@ -9,27 +9,47 @@
        
        .property-container {
             display: flex;
-            justify-content: space-between; /* Alinha a imagem à direita */
-            background-color: rgb(172, 172, 172); 
-            border: 1px solid rgba(183, 183, 183, 0.5); 
-            border-radius: 4px; 
+            justify-content: space-between; 
+            background-color: #C5C5C5; 
+            border: 3px solid rgba(36, 62, 81, 0.5); 
+            border-radius: 7px; 
             padding: 20px; 
             margin: 10px 0; 
-            color: white;
-            align-items: center; /* Centraliza verticalmente */
+            color: rgb(0, 0, 0);
+            align-items: center; 
             width: 1560px;
+            font-size: 18px;
         }
 
         .property-details {
-            flex: 1; /* O conteúdo textual ocupa mais espaço */
+            flex: 1; 
         }
 
-        .property-image img {
-            width: 230px; /* Defina o tamanho da imagem */
-            height: 140px;
-            margin-left: 10px; /* Espaço entre imagem e conteúdo */
-            border-radius: 2px;
-        }
+        .property-image {
+    flex: 0 0 150px; /* Define a largura fixa da imagem */
+    margin-right: 20px; /* Espaço entre a imagem e os detalhes */
+}
+
+.property-image img {
+    width: 100%; /* A imagem ocupa toda a largura do container da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Deixa a imagem com cantos arredondados */
+}
+
+        .btn-detalhes {
+    background-color: #5574A3; /* Azul */
+    color: rgb(255, 255, 255); /* Texto branco */
+    padding: 10px 20px; /* Tamanho do botão */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+.btn-detalhes:hover {
+    background-color: #384c64; /* Azul mais escuro ao passar o mouse */
+}
+
+     
     </style>
 </head>
 <body>
@@ -51,10 +71,10 @@
     
     <div class="divider"></div> <!-- Divisa -->
  
-    <h1 style="color: white;">Casas</h1>
+    <h1 style="color: white; margin-left: 45px; font-size: 25px;">Casas</h1>
 
     <div>
-        <strong style="color: white;">ID do Usuário:</strong> <span id="usuarioId"></span>
+        
     </div>
 
     
