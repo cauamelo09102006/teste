@@ -44,7 +44,7 @@ body {
   }
   
   button {
-    background-color: #043A6C;
+    background-color: #032c52;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -60,7 +60,7 @@ body {
   }
   
   button:hover {
-    background-color: #032c52;
+    background-color: #001b33;
   }
   .top-bar {
     background-color: #373d42; 

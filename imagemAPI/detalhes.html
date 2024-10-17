@@ -5,30 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/detalhes.css">
     <title>Detalhes do Imóvel</title>
+    <style>
+        .container {
+            display: flex; /* Utiliza flexbox para alinhar a imagem e os containers */
+            gap: 20px; /* Espaçamento entre a imagem e os containers */
+            align-items: flex-start; /* Alinha os itens ao topo */
+            width: 2000px;
+        }
+
+        .imovel-image {
+            flex: 1; /* A imagem ocupa o espaço proporcionalmente */
+            max-width: 300px; /* Largura máxima da imagem */
+        }
+
+        .imovel-image img {
+            width: 800px; /* Imagem ocupa 100% do container */
+            border-radius: 8px; /* Bordas arredondadas na imagem */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra na imagem */
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: column; /* Itens dentro do container são empilhados verticalmente */
+            gap: 10px; /* Espaçamento reduzido entre os containers */
+            align-items: flex-start; /* Alinha os containers à esquerda */
+        }
+
+        .imovel-detalhes,
+        .aluguel-detalhes,
+        .usuario-detalhes {
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
+            padding: 10px; /* Padding interno reduzido */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar os containers */
+            width: 300px; /* Largura fixa para os containers */
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Botões empilhados verticalmente */
+            gap: 10px; /* Espaçamento entre os botões */
+            margin-top: 10px; /* Margem acima dos botões */
+            align-items: flex-start; /* Alinha os botões à esquerda */
+        }
+    </style>
 </head>
 <body>
     <div class="top-bar">
         <img src="img/emblema.png" alt="Logo" width="70px" height="80px">
-        <div style="font-size: 80px; color: rgb(255, 255, 255); margin-right: 200px; font-family:serif; font-size: 60px; font-style: oblique;">YourPlace</div> 
+        <div style="font-size: 80px; color: rgb(255, 255, 255); margin-right: 200px; font-family: serif; font-style: oblique;">YourPlace</div> 
     </div>
 
     <h1 style="text-align: center; margin-bottom: 15px; color: white;">Detalhes do Imóvel</h1>
     
     <div class="container">
-        <div class="imovel-image" href="" target="_blank">
+        <div class="imovel-image">
             <img id="imovelImage" src="" alt="Imagem do Imóvel">
+            <div class="button-container">
+                <a href="https://api.whatsapp.com/send?phone=5514991815028&text=ol%C3%A1%20gostaria%20de%20saber%20sobre%20as%20casas">
+                    <button style="width: 235px; height: 30px; background-color: rgb(52, 95, 128); color: rgb(255, 255, 255); border-radius: 4px;" class="contact">Contato</button>
+                </a> 
+                <button style="width: 235px; height: 30px; color: white; background-color: rgb(52, 95, 128); border-radius: 4px;" class="buy" onclick="window.location.href = 'compra.html';">Comprar</button>
+            </div>
         </div>
         
-        <div class="imovel-info">
-            <div id="imovelDetalhes">
-                <p style="font-size: 20px; font-style:oblique;"><strong>Endereço:</strong> <span id="endereco"></span></p>
+        <div class="info-container">
+            <!-- Início do Container para Endereço até Condições -->
+            <div class="imovel-detalhes" style="width: 500px; background-color: #B1B0B0;">
+                <p style="font-size: 20px; font-style: oblique;"><strong>Endereço:</strong> <span id="endereco"></span></p>
                 <p style="font-size: 20px; font-style: oblique;"><strong>Descrição:</strong> <span id="descricao"></span></p>
                 <p style="font-size: 20px; font-style: oblique;"><strong>IPTU:</strong> <span id="iptu"></span></p>
-                <p style="font-size: 20px; font-style: oblique;"> <strong>Condições:</strong> <span id="condicoes"></span></p>
-                
+                <p style="font-size: 20px; font-style: oblique;"><strong>Condições:</strong> <span id="condicoes"></span></p>
             </div>
+            <!-- Fim do Container para Endereço até Condições -->
 
-            <div id="aluguelDetalhes" style="display: none;">
+            <!-- Início do Container para Detalhes do Aluguel até Valor -->
+            <div id="aluguelDetalhes" class="aluguel-detalhes" style="display: none; width: 500px; background-color: #B1B0B0;">
                 <h2>Detalhes de Aluguel</h2>
                 <p><strong>Tipo:</strong> <span id="tipoAluguel"></span></p>
                 <p><strong>Área:</strong> <span id="areaAluguel"></span></p>
@@ -36,45 +88,23 @@
                 <p><strong>Disponível:</strong> <span id="disponivelAluguel"></span></p>
                 <p><strong>Mobiliado:</strong> <span id="mobiliadoAluguel"></span></p>
                 <p><strong>Valor:</strong> <span id="valorAluguel"></span></p>
-                <div id="usuarioAluguelDetalhes">
-                    <h3>Informações do Usuário</h3>
-                    <p><strong>Nome:</strong> <span id="nomeUsuarioAluguel"></span></p>
-                    <p><strong>Email:</strong> <span id="emailUsuarioAluguel"></span></p>
-                    <p><strong>Telefone:</strong> <span id="telefoneUsuarioAluguel"></span></p>
-                    <a href="https://api.whatsapp.com/send?phone=5514991815028&text=ol%C3%A1%20gostaria%20de%20saber%20sobre%20as%20casas">
-                        <button style="width: 195px; height: 30px; background-color: rgb(52, 95, 128); color: rgb(255, 255, 255); border-radius: 4px;" class="contact">Contato</button>
-                    </a> 
-                    <button style="width: 195px; height: 30px; color: white; background-color: rgb(52, 95, 128); border-radius: 4px;" class="buy" onclick="window.location.href = 'compra.html';">Comprar</button>
-
-            
-                </div>
             </div>
+            <!-- Fim do Container para Detalhes do Aluguel até Valor -->
 
-            <div id="vendaDetalhes" style="display: none;">
-                <h2>Detalhes de Venda</h2>
-                <p><strong>Tipo:</strong> <span id="tipoVenda"></span></p>
-                <p><strong>Área:</strong> <span id="areaVenda"></span></p>
-                <p><strong>Cômodos:</strong> <span id="comodosVenda"></span></p>
-                <p><strong>Disponível:</strong> <span id="disponivelVenda"></span></p>
-                <p><strong>Mobiliado:</strong> <span id="mobiliadoVenda"></span></p>
-                <p><strong>Valor:</strong> <span id="valorVenda"></span></p>
-                <div id="usuarioVendaDetalhes">
-                    <h3>Informações do Usuário</h3>
-                    <p><strong>Nome:</strong> <span id="nomeUsuarioVenda"></span></p>
-                    <p><strong>Email:</strong> <span id="emailUsuarioVenda"></span></p>
-                    <p><strong>Telefone:</strong> <span id="telefoneUsuarioVenda"></span></p>
-                    <a href="https://api.whatsapp.com/send?phone=5514991815028&text=ol%C3%A1%20gostaria%20de%20saber%20sobre%20as%20casas">
-                        <button style="width: 195px; height: 30px; background-color: rgb(156, 20, 20); color: rgb(255, 255, 255); border-radius: 10px;" class="contact">Contato</button>
-                    </a> 
-                    <button style="width: 195px; height: 30px; color: white; background-color: rgb(116, 39, 39); border-radius: 10px;" class="buy" onclick="window.location.href = 'compra.html';">Comprar</button>
-                </div>
+            <!-- Início do Container para Informações do Usuário e Telefone -->
+            <div id="usuarioAluguelDetalhes" class="usuario-detalhes" style="width: 500px; background-color: #B1B0B0;">
+                <h3>Informações do Usuário</h3>
+                <p><strong>Nome:</strong> <span id="nomeUsuarioAluguel"></span></p>
+                <p><strong>Email:</strong> <span id="emailUsuarioAluguel"></span></p>
+                <p><strong>Telefone:</strong> <span id="telefoneUsuarioAluguel"></span></p>
             </div>
+            <!-- Fim do Container para Informações do Usuário e Telefone -->
         </div>
     </div>
 
-
-
+    <!-- Início do Container para Botões -->
     
+    <!-- Fim do Container para Botões -->
 
     <script src="./js/detalhes.js"></script>
 </body>

@@ -13,7 +13,7 @@ body {
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.689);
     margin-top: 100px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -78,3 +78,4 @@ button:hover {
     padding-left: 20px; /* Espaçamento à esquerda */
     justify-content: space-between; /* Adiciona espaço entre os elementos filhos */
 }
+

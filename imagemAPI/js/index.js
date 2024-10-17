@@ -2,10 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const usuarioId = localStorage.getItem('usuarioId');
     if (usuarioId) {
         document.getElementById('usuarioId').textContent = usuarioId;
-    } else {
-        alert('Usuário não está logado.');
-       
-    }
+    } 
 });
 async function carregarListaCasas() {
     try {

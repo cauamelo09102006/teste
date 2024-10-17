@@ -57,7 +57,7 @@
 
   .button-link {
     display: inline-block;
-    background-color: rgb(12, 16, 24);
+    background-color: rgb(41, 66, 116);
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -75,7 +75,7 @@
 
   .button-link1 {
     display: inline-block;
-    background-color: rgb(12, 16, 24);
+    background-color:  rgb(41, 66, 116);
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -92,11 +92,11 @@
   }
   
   .button-link:hover {
-    background-color: rgba(33, 44, 67, 0.648);
+    background-color: rgb(15, 23, 42);
   }
 
   .button-link1:hover {
-    background-color: rgba(33, 44, 67, 0.648);
+    background-color: rgb(15, 26, 50);
   }
 
   .footer {
