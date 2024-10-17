@@ -25,6 +25,7 @@ async function carregarDetalhes() {
         const blob = await imageResponse.blob();
         const imageUrl = URL.createObjectURL(blob);
         document.getElementById('imovelImage').src = imageUrl;
+        
 
         if (imovelDetalhes.alugueis.length > 0) {
             localStorage.setItem('tipoImovel', 'aluguel');
@@ -73,6 +74,7 @@ async function carregarDetalhes() {
         console.error('Erro ao obter os detalhes do imóvel:', error);
         alert('Imóvel não encontrado.');
     }
+
 }
 
 // Carregar os detalhes do imóvel ao carregar a página

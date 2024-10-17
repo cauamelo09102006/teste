@@ -85,7 +85,20 @@ namespace APIimobiliaria.Controllers
             }
         }
 
+        [HttpGet("destaques")]
+        public async Task<ActionResult<IEnumerable<Imovel>>> GetImoveisDestaque()
+        {
+            var imoveisDestaque = await _context.Imoveis
+                .Take(3) // Pega os três primeiros imóveis
+                .ToListAsync();
 
+            if (imoveisDestaque == null || !imoveisDestaque.Any())
+            {
+                return NotFound("Nenhum imóvel destacado encontrado.");
+            }
+
+            return Ok(imoveisDestaque);
+        }
       
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteImovel(int id)

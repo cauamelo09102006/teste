@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\wwwroot\\images\\893777073-899.430322378583636.webp",
-      "PackagePath": "staticwebassets\\images\\893777073-899.430322378583636.webp"
-    },
-    {
       "Id": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\wwwroot\\images\\Captura de tela 2024-06-11 153121.png",
       "PackagePath": "staticwebassets\\images\\Captura de tela 2024-06-11 153121.png"
     },
@@ -25,10 +21,6 @@
       "PackagePath": "staticwebassets\\images\\WIN_20240222_16_09_30_Pro.jpg"
     },
     {
-      "Id": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\wwwroot\\images\\an-18th-century-stckli-from-the-canton-of-bern-a-stckli-is-a-secondary-farm-home-that-houses-an-older-generation-or-servants-this-example-now-at-the-swiss-open-air-museum-ballenberg-is-used-as-a-bread.jpg",
-      "PackagePath": "staticwebassets\\images\\an-18th-century-stckli-from-the-canton-of-bern-a-stckli-is-a-secondary-farm-home-that-houses-an-older-generation-or-servants-this-example-now-at-the-swiss-open-air-museum-ballenberg-is-used-as-a-bread.jpg"
-    },
-    {
       "Id": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\wwwroot\\images\\anuncio1.png",
       "PackagePath": "staticwebassets\\images\\anuncio1.png"
     },
@@ -45,12 +37,20 @@
       "PackagePath": "staticwebassets\\images\\anuncio4.png"
     },
     {
+      "Id": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\wwwroot\\images\\encurtar.jpg",
+      "PackagePath": "staticwebassets\\images\\encurtar.jpg"
+    },
+    {
       "Id": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\wwwroot\\images\\humildade.png",
       "PackagePath": "staticwebassets\\images\\humildade.png"
     },
     {
       "Id": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\wwwroot\\images\\images.jfif",
       "PackagePath": "staticwebassets\\images\\images.jfif"
+    },
+    {
+      "Id": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\wwwroot\\images\\teste.webp",
+      "PackagePath": "staticwebassets\\images\\teste.webp"
     },
     {
       "Id": "C:\\Users\\CauaMelo\\Documents\\Projeto\\APIimobiliaria\\wwwroot\\images\\thumb-1920-909641.png",

@@ -86,18 +86,18 @@
     }
    
     .left-bar, .right-bar {
-        background-color: #38383845; /* Cor de fundo */
-        width: 17px; /* Largura das barras */
-        height: 100%; /* Altura total da tela */
-        position: fixed; /* Fixa as barras na tela */
-        top: 0; /* Posiciona as barras no topo */
-        z-index: 1000; /* Garante que as barras estejam acima de outros elementos */
+        background-color: #38383845; 
+        width: 17px; 
+        height: 100%; 
+        position: fixed; 
+        top: 0; 
+        z-index: 1000; 
     }
    
     .left-bar {
-        left: 0; /* Posiciona a barra à esquerda */
+        left: 0; 
     }
    
     .right-bar {
-        right: 0; /* Posiciona a barra à direita */
+        right: 0; 
     }
