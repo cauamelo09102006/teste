@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const usuarioId = localStorage.getItem('usuarioId');
+  if (!usuarioId) {
+      alert('Usuário não está logado.');
+      window.location.href = 'entrar.html';
+  }
+});
+
 let selectedPaymentMethod = ''; // Variável para armazenar o método de pagamento selecionado
 const tipoImovel = localStorage.getItem('tipoImovel'); // Recupera o tipo de imóvel (aluguel ou venda)
 
@@ -12,9 +20,9 @@ function confirmPayment() {
   let contratoUrl = '';
 
   if (tipoImovel === 'aluguel') {
-    contratoUrl = 'pdfs/contrato.pdf'; // URL do contrato de aluguel
+    contratoUrl = 'pdfs/contrato.pdf'; 
   } else if (tipoImovel === 'venda') {
-    contratoUrl = 'pdfs/contratovenda.pdf'; // URL do contrato de venda
+    contratoUrl = 'pdfs/contratovenda.pdf'; 
   }
 
   // Fazer download do contrato

@@ -89,7 +89,7 @@ namespace APIimobiliaria.Controllers
         public async Task<ActionResult<IEnumerable<Imovel>>> GetImoveisDestaque()
         {
             var imoveisDestaque = await _context.Imoveis
-                .Take(3) // Pega os três primeiros imóveis
+                .Take(3) 
                 .ToListAsync();
 
             if (imoveisDestaque == null || !imoveisDestaque.Any())

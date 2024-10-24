@@ -64,23 +64,19 @@ body {
   }
   .top-bar {
     background-color: #373d42; 
-    height: 80px; /* Altura da barra */
+    height: 90px; /* Altura da barra */
     width: 100%; /* Largura total */
     position: fixed; /* Fixa a barra no topo */
     top: 0; /* Posiciona a barra no topo */
     left: 0; /* Posiciona a barra à esquerda */
     z-index: 1000; /* Garante que a barra esteja acima de outros elementos */
-    border-radius: 10px;
     display: flex; /* Permite o alinhamento vertical */
     align-items: center; /* Alinha os itens verticalmente */
     padding-left: 20px; /* Espaçamento à esquerda */
     margin-bottom: 20px;
   }
 
-  .top-bar img {
-    height: 60px; /* Altura da imagem */
-    margin-right: 20px; /* Espaçamento à direita */
-  }
+  
 
   .login-container {
     text-align: center;

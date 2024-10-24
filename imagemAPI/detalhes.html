@@ -7,46 +7,46 @@
     <title>Detalhes do Imóvel</title>
     <style>
         .container {
-            display: flex; /* Utiliza flexbox para alinhar a imagem e os containers */
-            gap: 20px; /* Espaçamento entre a imagem e os containers */
-            align-items: flex-start; /* Alinha os itens ao topo */
+            display: flex; 
+            gap: 20px; 
+            align-items: flex-start; 
             width: 2000px;
         }
 
         .imovel-image {
-            flex: 1; /* A imagem ocupa o espaço proporcionalmente */
-            max-width: 300px; /* Largura máxima da imagem */
+            flex: 1; 
+            max-width: 300px; 
         }
 
         .imovel-image img {
-            width: 800px; /* Imagem ocupa 100% do container */
-            border-radius: 8px; /* Bordas arredondadas na imagem */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra na imagem */
+            width: 800px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
         }
 
         .info-container {
             display: flex;
-            flex-direction: column; /* Itens dentro do container são empilhados verticalmente */
-            gap: 10px; /* Espaçamento reduzido entre os containers */
-            align-items: flex-start; /* Alinha os containers à esquerda */
+            flex-direction: column; 
+            gap: 10px; 
+            align-items: flex-start; 
         }
 
         .imovel-detalhes,
         .aluguel-detalhes,
         .usuario-detalhes {
-            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
-            padding: 10px; /* Padding interno reduzido */
-            border-radius: 8px; /* Bordas arredondadas */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar os containers */
-            width: 300px; /* Largura fixa para os containers */
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 10px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 300px; 
         }
 
         .button-container {
             display: flex;
-            flex-direction: column; /* Botões empilhados verticalmente */
-            gap: 10px; /* Espaçamento entre os botões */
-            margin-top: 10px; /* Margem acima dos botões */
-            align-items: flex-start; /* Alinha os botões à esquerda */
+            flex-direction: column; 
+            gap: 10px; 
+            margin-top: 10px; 
+            align-items: flex-start; 
         }
     </style>
 </head>
@@ -77,7 +77,7 @@
                 <p style="font-size: 20px; font-style: oblique;"><strong>IPTU:</strong> <span id="iptu"></span></p>
                 <p style="font-size: 20px; font-style: oblique;"><strong>Condições:</strong> <span id="condicoes"></span></p>
             </div>
-            <!-- Fim do Container para Endereço até Condições -->
+            
 
             <!-- Início do Container para Detalhes do Aluguel até Valor -->
             <div id="aluguelDetalhes" class="aluguel-detalhes" style="display: none; width: 500px; background-color: #B1B0B0;">
@@ -90,7 +90,17 @@
                 <p><strong>Valor:</strong> <span id="valorAluguel"></span></p>
             </div>
             <!-- Fim do Container para Detalhes do Aluguel até Valor -->
-
+            <!-- Container para Detalhes de Venda (Novo bloco adicionado) -->
+            <div id="vendaDetalhes" class="venda-detalhes" style="display: none; width: 500px; background-color: #B1B0B0;">
+                <h2>Detalhes de Venda</h2>
+                <p><strong>Tipo:</strong> <span id="tipoVenda"></span></p>
+                <p><strong>Área:</strong> <span id="areaVenda"></span></p>
+                <p><strong>Cômodos:</strong> <span id="comodosVenda"></span></p>
+                <p><strong>Disponível:</strong> <span id="disponivelVenda"></span></p>
+                <p><strong>Mobiliado:</strong> <span id="mobiliadoVenda"></span></p>
+                <p><strong>Valor:</strong> <span id="valorVenda"></span></p>
+            </div>
+            
             <!-- Início do Container para Informações do Usuário e Telefone -->
             <div id="usuarioAluguelDetalhes" class="usuario-detalhes" style="width: 500px; background-color: #B1B0B0;">
                 <h3>Informações do Usuário</h3>

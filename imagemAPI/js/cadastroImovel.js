@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const usuarioId = localStorage.getItem('usuarioId');
     if (!usuarioId) {
         alert('Usuário não está logado.');
+        window.location.href = 'entrar.html';
     }
 });
 
